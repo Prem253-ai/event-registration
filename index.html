@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Event Registration</h2>
+
+    <form id="eventForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="tel" id="phone" placeholder="Phone" required>
+
+      <label>TECH QUIZ <input type="checkbox" name="event" value="TECH QUIZ"></label>
+      <label>CODE CRACKER <input type="checkbox" name="event" value="CODE CRACKER"></label>
+      <label>POSTER SHOWCASE <input type="checkbox" name="event" value="POSTER SHOWCASE"></label>
+      <label>CAPTURE YOURSELF <input type="checkbox" name="event" value="CAPTURE YOURSELF"></label>
+
+      <button type="submit">Register & Pay</button>
+    </form>
+
+    <h3 id="amount"></h3>
+    <div id="qrcode"></div>
+    <div id="message" class="message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
